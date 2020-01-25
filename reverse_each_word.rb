@@ -3,3 +3,5 @@ def reverse_each_word(word)
   reverse_array = new_array.each {|x| x.reverse!}
   new_array.join(" ")
 end
+
+reverse_each_word("Hello there and how are you?")
