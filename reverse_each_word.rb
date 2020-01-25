@@ -7,13 +7,11 @@ def reverse_each_word(string)
   new_array.join(" ")
 end
 
-def reverse_each_word_collect(string)
-  array = string.split(" ")
-  cool.array = []
-  array.collect do |string| 
-    cool.array << string.reverse
-  end
-  cool.array.join(" ")
+def reverse_each_word_collect(sentence)
+  words_array = sentence.split(" ")
+  new_array = []
+  new_array = words_array.collect {|word| word.reverse }
+  new_array.join(" ")
 end
 
 reverse_each_word("Hello there, and how are you?")
